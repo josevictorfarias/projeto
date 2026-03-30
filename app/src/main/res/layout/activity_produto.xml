@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:padding="12dp"
+        android:hint="Nome do produto"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/edtPreco"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:padding="12dp"
+        android:hint="Preço (ex: 12.50)"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/edtNome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"/>
+
+    <EditText
+        android:id="@+id/edtQuantidade"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:padding="12dp"
+        android:hint="Quantidade no estoque"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/edtPreco"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"/>
+
+    <Button
+        android:id="@+id/btnMostrar"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="Mostrar dados"
+        app:layout_constraintTop_toBottomOf="@id/edtQuantidade"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/edtEntrada"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:padding="12dp"
+        android:hint="Qtd para entrar (adicionar)"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/btnMostrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"/>
+
+    <Button
+        android:id="@+id/btnAdicionar"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="Adicionar ao estoque"
+        app:layout_constraintTop_toBottomOf="@id/edtEntrada"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"/>
+
+    <EditText
+        android:id="@+id/edtSaida"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:padding="12dp"
+        android:hint="Qtd para remover (saída)"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/btnAdicionar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"/>
+
+    <Button
+        android:id="@+id/btnRemover"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="Remover do estoque"
+        app:layout_constraintTop_toBottomOf="@id/edtSaida"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Resultado aparecerá aqui"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnRemover"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

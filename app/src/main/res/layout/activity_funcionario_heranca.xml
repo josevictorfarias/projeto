@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome do Funcionário"
+        android:padding="16dp"/>
+
+    <EditText
+        android:id="@+id/edtSalarioBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Salário Base"
+        android:inputType="numberDecimal"
+        android:padding="16dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edtInfoExtra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Informe bônus ou horas extras"
+        android:inputType="numberDecimal"
+        android:padding="16dp"/>
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular Salário Final" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:paddingTop="20dp" />
+
+</LinearLayout>

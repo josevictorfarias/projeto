@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <EditText
+            android:id="@+id/edtCodigoProduto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Código do produto" />
+
+        <EditText
+            android:id="@+id/edtNomeProduto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do produto"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/edtCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Categoria"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/edtQuantidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantidade"
+            android:inputType="number"
+            android:layout_marginTop="16dp" />
+
+        <ImageView
+            android:id="@+id/imgPreview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="fitCenter"
+            android:background="#EEE" />
+
+        <Button
+            android:id="@+id/btnSelecionarImagem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selecionar Imagem"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnSalvarProduto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salvar Produto"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+</ScrollView>
